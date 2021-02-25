@@ -28,11 +28,10 @@ public class ThreadPoolCalculator {
             for (Future<Integer> future : futures) {
                 sum += future.get();
             }
+            executor.shutdown();
             return sum;
         } catch (InterruptedException | ExecutionException e) {
             throw new RuntimeException("Exception occurred during the calculation", e);
-        } finally {
-            executor.shutdown();
         }
     }
 }

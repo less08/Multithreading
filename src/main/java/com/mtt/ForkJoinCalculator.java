@@ -3,7 +3,7 @@ package com.mtt;
 import java.util.List;
 import java.util.concurrent.ForkJoinPool;
 
-class ForkJoinCalculator {
+public class ForkJoinCalculator {
     public Integer sum(List<Integer> values) {
         if (values == null) {
             return 0;

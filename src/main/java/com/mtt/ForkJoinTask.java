@@ -5,7 +5,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.RecursiveTask;
 
-class ForkJoinTask extends RecursiveTask<Integer> {
+public class ForkJoinTask extends RecursiveTask<Integer> {
     private int threshHold;
     private List<Integer> list;
 
